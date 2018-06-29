@@ -25,9 +25,9 @@ home = os.path.expanduser("~")
 
 parser = argparse.ArgumentParser()
 parser.add_argument('--train_dir', default='%s/data/datasets/segmentation_Dataset/VOC2012' % home)  # training dataset
-parser.add_argument('--model', default='FCN')  # training dataset
+parser.add_argument('--model', default='SegNet')  # training dataset
 parser.add_argument('--base', default='vgg16')  # training dataset
-parser.add_argument('--b', type=int, default=48)  # batch size
+parser.add_argument('--b', type=int, default=14)  # batch size
 parser.add_argument('--e', type=int, default=400)  # epoches
 opt = parser.parse_args()
 print(opt)

@@ -171,6 +171,7 @@ class Vec2Img(nn.Module):
 
 class SegNet(nn.Module):
     def __init__(self, pretrain=True, c_input=3, c_output=21):
+        super(SegNet, self).__init__()
         self.img2vec = Img2Vec(pretrained=pretrain, c_input=c_input)
         self.ve22img = Vec2Img(c_output=c_output, c_input=512)
 
