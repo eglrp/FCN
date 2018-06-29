@@ -106,6 +106,7 @@ def vgg11(pretrained=False, **kwargs):
                  nn.Sequential(*list_feature[11:16]),
                  nn.Sequential(*list_feature[16:21])]
     model.features = nn.ModuleList(_features)
+    model.classifier = None
     return model
 
 
@@ -127,6 +128,7 @@ def vgg11_bn(pretrained=False, **kwargs):
                  nn.Sequential(*list_feature[15:22]),
                  nn.Sequential(*list_feature[22:29])]
     model.features = nn.ModuleList(_features)
+    model.classifier = None
     return model
 
 
@@ -148,6 +150,7 @@ def vgg13(pretrained=False, **kwargs):
                  nn.Sequential(*list_feature[15:20]),
                  nn.Sequential(*list_feature[20:25])]
     model.features = nn.ModuleList(_features)
+    model.classifier = None
     return model
 
 
@@ -169,6 +172,7 @@ def vgg13_bn(pretrained=False, **kwargs):
                  nn.Sequential(*list_feature[21:28]),
                  nn.Sequential(*list_feature[28:35])]
     model.features = nn.ModuleList(_features)
+    model.classifier = None
     return model
 
 
@@ -190,6 +194,7 @@ def vgg16(pretrained=False, **kwargs):
                  nn.Sequential(*list_feature[17:24]),
                  nn.Sequential(*list_feature[24:31])]
     model.features = nn.ModuleList(_features)
+    model.classifier = None
     return model
 
 
@@ -211,6 +216,7 @@ def vgg16_bn(pretrained=False, **kwargs):
                  nn.Sequential(*list_feature[24:34]),
                  nn.Sequential(*list_feature[34:44])]
     model.features = nn.ModuleList(_features)
+    model.classifier = None
     return model
 
 
@@ -232,6 +238,7 @@ def vgg19(pretrained=False, **kwargs):
                  nn.Sequential(*list_feature[19:28]),
                  nn.Sequential(*list_feature[28:37])]
     model.features = nn.ModuleList(_features)
+    model.classifier = None
     return model
 
 
@@ -253,6 +260,7 @@ def vgg19_bn(pretrained=False, **kwargs):
                  nn.Sequential(*list_feature[27:40]),
                  nn.Sequential(*list_feature[40:53])]
     model.features = nn.ModuleList(_features)
+    model.classifier = None
     return model
 
 
