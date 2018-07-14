@@ -13,7 +13,9 @@ pytorch, [tensorboard-pytorch](https://github.com/lanpa/tensorboard-pytorch), te
 If you don't need visulization, then delete the lines about visulization in "main.py".
 
 ## Usage
-Train: run ```main_voc.py``` or ```main_cityscapes.py``` for training on VOC dataset or Cityscapes dataset
+download code: ```git clone https://github.com/zengxianyu/FCN.git --recursive```
+
+run ```main_*.py``` for training and validation
 
 ## Reference
 [1] Long, Jonathan, Evan Shelhamer, and Trevor Darrell. "Fully convolutional networks for semantic segmentation." Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition. 2015.
